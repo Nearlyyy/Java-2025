@@ -1,5 +1,5 @@
 // Escribir un programa de Java que pida dos números al usuario y
-// realice las operaciones básicas de la aritmética (suma, resta, multiplicación y división)
+// realice las operaciones básicas de la aritmética (suma, resta, multiplicación y división) 
 
 import java.util.Scanner;
 
