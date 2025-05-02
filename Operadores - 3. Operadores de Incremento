@@ -1,0 +1,23 @@
+// Escriba un programa de Java que solicite la edad del usuario. El programa debe mostrar la edad que el usuario tuvo el año pasado y la que tendrá el año que viene
+
+import java.util.Scanner;
+
+public class OperadoresIncremento {
+    public static void main(String[] args) {
+
+        int edadAnterior, edadPosterior;
+
+        Scanner entrada = new Scanner (System.in);
+
+        System.out.print("Ingrese su edad actual: ");
+        int edad = entrada.nextInt();
+
+        edadAnterior = edad - 1;
+        edadPosterior = edad + 1;
+
+        System.out.println("Su edad actual es de " + edad + " años");
+        System.out.println("Usted tenía " + edadAnterior + " años el año pasado");
+        System.out.println("Usted tendrá " + edadPosterior + " años el año que viene");
+
+    }
+}
