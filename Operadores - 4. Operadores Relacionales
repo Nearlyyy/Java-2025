@@ -1,0 +1,38 @@
+// Escribir un programa de Java que solicite 3 números al usuario para realizar 2 tipos de operaciones combinadas con los mismos.
+// El programa debe calcular esas operaciones y comparar los resultados de cada operación y mostrarlo en pantalla
+
+import java.util.Scanner;
+
+public class OperadoresRelacionales {
+    public static void main(String[] args) {
+
+        Scanner entrada = new Scanner(System.in);
+
+        int valor1, valor2;
+
+        System.out.print("Ingrese el valor para el número 1: ");
+        int num1 = entrada.nextInt();
+
+        System.out.print("Ingrese el valor para el número 2: ");
+        int num2 = entrada.nextInt();
+
+        System.out.print("Ingrese el valor para el número 3: ");
+        int num3 = entrada.nextInt();
+
+
+        valor1 = num1 + num2 * num3 + (num2 / num3 + num2) * num1 / num3;
+        valor2 = num2 * num3 / num1 + (num3 / num1 * num2) + num1;
+
+        System.out.println("Valor 1: " + num1 + " + " + num2 + " * " + num3 + " + (" + num2 + " / " + num3 + " + " + num2 + ") * " + num1 + " / " + num3 + " = " + valor1);
+        System.out.println("Valor 2: " + num2 + " * " + num3 + " / " + num1 + " + (" + num3 + " / " + num1 + " * " + num2 + ") + " + num1 + " = " + valor2);
+
+        System.out.println("--------------------------------------------------------");
+        System.out.println(valor1 + " == " + valor2 + " (" + (valor1 == valor2) + ")");
+        System.out.println(valor1 + " != " + valor2 + " (" + (valor1 != valor2) + ")");
+        System.out.println(valor1 + " > " + valor2 + " (" + (valor1 > valor2) + ")");
+        System.out.println(valor1 + " < " + valor2 + " (" + (valor1 < valor2) + ")");
+        System.out.println(valor1 + " >= " + valor2 + " (" + (valor1 >= valor2) + ")");
+        System.out.println(valor1 + " <= " + valor2 + " (" + (valor1 <= valor2) + ")");
+        System.out.println("--------------------------------------------------------");
+    }
+}
