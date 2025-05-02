@@ -1,0 +1,34 @@
+// Pedir al usuario 2 datos por teclado: un número y un ángulo. El programa debe tomar el ángulo y calcular las operaciones trigonométricas esenciales
+// y con el número, calcular la raiz cuadrada, valor absoluto y logaritmo en base 2
+
+import java.util.Scanner;
+
+public class ClaseMath {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Ingrese el valor de un ángulo: ");
+        float angulo = entrada.nextFloat();
+
+        System.out.println("------------------------------------------------------------");
+        System.out.println("Seno de " + angulo + "° = " + Math.sin(Math.toRadians(angulo)));
+        System.out.println("Coseno de " + angulo + "° = " + Math.cos(Math.toRadians(angulo)));
+        System.out.println("Tangente de " + angulo + "° = " + Math.tan(Math.toRadians(angulo)));
+        System.out.println("Seno hiperbólico de " + angulo + "° = " + Math.sinh(angulo));
+        System.out.println("Coseno hiperbólico de " + angulo + "° = " + Math.cosh(angulo));
+        System.out.println("Tangente hiperbólica de " + angulo + "° = " + Math.tanh(angulo));
+        System.out.println("Cosecante de " + angulo + "° = " + (angulo != 0 ? 1 / Math.sin(Math.toRadians(angulo)) : "Indefinido"));
+        System.out.println("Secante de " + angulo + "° = " + (angulo != 90 ? 1 / Math.cos(Math.toRadians(angulo)) : " Indefinido"));
+        System.out.println("Cotangente de " + angulo + "° = " + (angulo != 0 ? 1 / Math.tan(Math.toRadians(angulo)) : " Indefinido"));
+        System.out.println("------------------------------------------------------------");
+
+        System.out.println("Ingrese un número cualquiera: ");
+        float numero = entrada.nextFloat();
+
+        System.out.println("------------------------------------------------------------");
+        System.out.println("Raíz cuadrada de " +numero + " = " + (numero >= 0 ? Math.sqrt(numero) : " Indefinido"));
+        System.out.println("Valor absoluto de " +numero + " = " + Math.abs(numero));
+        System.out.println("Logaritmo base 2 de " +numero + " = " + (numero > 0 ? Math.log(numero) : "Indefinido"));
+        System.out.println("------------------------------------------------------------");
+    }
+}
