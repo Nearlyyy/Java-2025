@@ -1,0 +1,26 @@
+// Escribir un programa de Java que pida dos números al usuario y
+// realice las operaciones básicas de la aritmética (suma, resta, multiplicación y división)
+
+import java.util.Scanner;
+
+public class Operadores {
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
+
+        int numero1, numero2;
+
+        System.out.print("Ingrese un primer número: ");
+        numero1 = entrada.nextInt();
+
+        System.out.print("Ingrese un segundo número: ");
+        numero2 = entrada.nextInt();
+
+        System.out.println("Resultados");
+        System.out.println(numero1 + " + " + numero2 + " = " + (numero1 + numero2));
+        System.out.println(numero1 + " - " + numero2 + " = " + (numero1 - numero2));
+        System.out.println(numero1 + " * " + numero2 + " = " + (numero1 * numero2));
+        System.out.println(numero1 + " / " + numero2 + " = " + (numero1 / numero2));
+
+    }
+}
